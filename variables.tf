@@ -14,6 +14,12 @@ variable "token" {
   type        = string
 }
 
+variable "scheme" {
+  description = "(Optional) Scheme that will be used for the request"
+  type        = string
+  default     = "http"
+}
+
 variable "path" {
   description = "(Optional) Path where the secrets engine will be mounted"
   type        = string
@@ -29,7 +35,7 @@ variable "ca_cert" {
 variable "namespace" {
   description = "(Optional) Vault Namespace where this resource will reside"
   type        = string
-  default     = ""
+  default     = null
 }
 
 variable "default_lease_ttl" {

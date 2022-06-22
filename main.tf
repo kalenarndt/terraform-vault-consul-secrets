@@ -5,6 +5,7 @@ resource "vault_consul_secret_backend" "backend" {
   description               = var.description
   address                   = var.address
   token                     = var.token
+  scheme                    = var.scheme
   ca_cert                   = var.ca_cert
   default_lease_ttl_seconds = var.default_lease_ttl
   max_lease_ttl_seconds     = var.max_lease_ttl

@@ -33,9 +33,10 @@ No modules.
 | <a name="input_default_lease_ttl"></a> [default\_lease\_ttl](#input\_default\_lease\_ttl) | (Optional) Default lease TTL that is associated for credentials issued by this secrets backend | `number` | `null` | no |
 | <a name="input_description"></a> [description](#input\_description) | (Optional) Description for the Consul Secrets Engine | `string` | `"Secrents engine for Consul"` | no |
 | <a name="input_max_lease_ttl"></a> [max\_lease\_ttl](#input\_max\_lease\_ttl) | (Optional) Max lease TTL that is associated for credentials issued by this secrets backend | `number` | `null` | no |
-| <a name="input_namespace"></a> [namespace](#input\_namespace) | (Optional) Vault Namespace where this resource will reside | `string` | `""` | no |
+| <a name="input_namespace"></a> [namespace](#input\_namespace) | (Optional) Vault Namespace where this resource will reside | `string` | `null` | no |
 | <a name="input_path"></a> [path](#input\_path) | (Optional) Path where the secrets engine will be mounted | `string` | `"consul"` | no |
 | <a name="input_roles"></a> [roles](#input\_roles) | Map that contains the roles to create (key) and the ACL policies that are associated with them (value) | `map(list(string))` | n/a | yes |
+| <a name="input_scheme"></a> [scheme](#input\_scheme) | (Optional) Scheme that will be used for the request | `string` | `"http"` | no |
 | <a name="input_token"></a> [token](#input\_token) | (Required) Token that will be used to create new tokens | `string` | n/a | yes |
 
 ## Outputs
