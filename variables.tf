@@ -34,14 +34,14 @@ variable "namespace" {
 
 variable "default_lease_ttl" {
   description = "(Optional) Default lease TTL that is associated for credentials issued by this secrets backend"
-  type        = string
-  default     = ""
+  type        = number
+  default     = null
 }
 
 variable "max_lease_ttl" {
   description = "(Optional) Max lease TTL that is associated for credentials issued by this secrets backend"
-  type        = string
-  default     = ""
+  type        = number
+  default     = null
 }
 
 variable "roles" {
